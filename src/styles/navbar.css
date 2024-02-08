@@ -1,0 +1,51 @@
+:root {
+   --light: #fff;
+   --nav-padding: 60px 30px 10px;
+   --logo-link: 30px;
+   --color1: #114250; /* #191970  #114250* /
+   --color2: #131514; 
+}
+
+nav {   
+   top: 0;
+   left: 0;
+   width: 100%;
+   /* position: fixed; */
+   padding: var(--nav-padding);
+   z-index: 2;
+}
+
+nav .logo span , .links .link {
+   color: var(--light);
+   font-size: var(--logo-link);
+}
+
+nav .logo span:first-child {
+   color: transparent;
+   -webkit-text-stroke: 1px var(--light);
+   -moz-text-stroke: 1px var(--light);
+   padding: 0 8px;
+}
+
+nav .links .link:last-child {
+   margin-left: 16px;
+}
+
+nav .links .link {
+   position: relative;
+}
+
+nav .links .link::before {
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 5px;
+   background: var(--color1);
+   top: calc(50% - 2px);
+   transition: all .3s ease-in-out;
+}
+
+nav .links .link:hover:before {
+   width: 100%;
+
+}
