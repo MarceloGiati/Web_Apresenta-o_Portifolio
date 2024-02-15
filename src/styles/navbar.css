@@ -1,8 +1,8 @@
 :root {
    --light: #fff;
-   --nav-padding: 60px 30px 10px;
+   --nav-padding: 30px 30px 10px;
    --logo-link: 30px;
-   --color1: #114250; /* #191970  #114250* /
+   --color1: #114250; /* #191970  #114250 */
    --color2: #131514; 
 }
 

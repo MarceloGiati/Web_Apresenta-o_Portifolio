@@ -1,6 +1,6 @@
 :root {
-    --name: 35px;
-    --role: 20px;
+    --name: 30px;
+    --role: 18px;
     --lwt: 16px:
     --right-padding: 32px;
     --left-padding: 48px;
@@ -15,8 +15,7 @@
 .hero {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    padding: 100px 50px;
-    
+    padding: 70px 50px;    
 }
 
 .hero .center {
@@ -98,12 +97,12 @@
 
 .hero .left p {
   padding-top: 2rem;  
-  margin-bottom: 3rem; 
+  margin-bottom: 2rem; 
   text-align: justify; 
 }
 
 .hero .left .lwt {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     background-color: var(--dark);
     color: var(--light);
     outline: none;
@@ -116,6 +115,24 @@
 }
 
 .hero .left .lwt:hover {
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.rigth .info .values .lwt {
+    margin-bottom: .5rem;
+    background-color: var(--dark);
+    color: var(--light);
+    outline: none;
+    border: 2px solid var(--light);
+    font-size: var(--lwt);
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+} 
+
+.rigth .info .values .lwt:hover {
     color: var(--dark);
     background-color: var(--light);
 }
@@ -133,8 +150,9 @@
 }
 
 .hero .rigth .info h3 {
-  margin-bottom: 2rem;  
+  margin-bottom: 3rem;  
   border-top: 1px solid var(--light-gray);
   padding: .5rem;
+  width: fit-content;
 }
  
